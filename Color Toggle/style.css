@@ -1,0 +1,122 @@
+body {
+	margin: 0;
+    padding: 0;
+	
+}
+
+h2 {
+    text-align: center;
+}
+
+#colorInstruction {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 200px;
+}
+
+#colorAlert {
+	color: green;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.nav-main {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	z-index: 1000;	
+}
+
+#btn-toggle-nav {
+	position: absolute;
+	width: 60px;
+	height: 100%;
+	background-color: #F98F39;
+	background-image: url("hamburger_menu.png");
+	background-repeat: no-repeat;
+	background-size: 40%;
+	background-position: center;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+
+#btn-toggle-nav:hover {
+	opacity: 0.5;
+}
+
+.nav-sidebar {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 50px;
+	height: calc(100vh); 
+	padding: 0 5px;
+	background-color: #1b1b1b;
+	transition: all 0.3s ease-in-out;
+	
+}
+
+.nav-sidebar ul {
+	padding-top: 15px;
+	overflow: hidden;
+	visibility: hidden;
+	
+}
+
+.nav-sidebar ul li {
+	line-height: 60px;
+	list-style: none;
+	
+}
+
+.nav-sidebar ul li span, .nav-sidebar ul li a {
+	display: block;
+	height: 100px;
+	padding: 0 60px;
+	margin-left: -60px;
+	margin-top: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	font-family: arial;
+	font-size: 16px;
+	white-space: nowrap;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav-sidebar ul li a:hover {
+	background-color: #222;
+}
+
+#menu_title {
+	color: white;
+}
+
+#white {
+	background-color: white;
+
+}
+
+#red {
+	background-color: red;
+}
+
+#orange {
+	background-color: orange;
+}
+
+#purple {
+	background-color: purple;
+}
+
+#green {
+	background-color: green;
+}
